@@ -1,0 +1,108 @@
+.faq-section{
+    background-color:white;
+    padding: 10rem 2rem;
+    background-size: auto;
+}
+
+.faq-content{
+    display: flex;
+    flex-direction: column;
+    color: $text-black;
+
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 70rem;
+        line-height: 1.5;
+
+        h5{
+            font-size: 22px;
+            margin: 0;
+        }
+        h2{
+            font-size: 2.7rem;
+            margin: 0 0 1.7rem 0;
+        }
+
+        p{
+            font-size: 15px;
+            color: $text-gray;
+            margin: 0;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.all-questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-box{
+    display: flex;
+    flex-direction: column;
+    color: $text-black;
+    background-color: white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+    width: 53rem;
+    margin: 0 auto;
+    cursor: pointer;
+
+
+    @media (max-width:850px){
+        width: 100%;
+    }
+
+    &__question{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+        padding: 1.5rem 2.5rem;
+        transition: 0.15s ease;
+
+        p{
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        i{
+            font-size: 2rem;
+        }
+    }
+
+    &__answer{
+        font-size: 15px;
+        color: $text-gray;
+        line-height: 1.7;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+        padding: 0 4rem;
+    }
+
+}
+
+.active-answer{
+    max-height:20rem;
+    padding: 2.5rem 4rem;
+    transition: 0.4s ease;
+
+    @media (max-width:550px){
+        max-width: 25rem;
+    }
+
+    @media (max-width:420px){
+        max-height: 50rem;
+    }
+}
+
+.active-question {
+    background-color: $text-orange;
+    color: white;
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+  }

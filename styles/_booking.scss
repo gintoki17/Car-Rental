@@ -1,0 +1,116 @@
+.book-section{
+    background: linear-gradient(to bottom, $bg-gray 20%, $bg-white 80%);
+    position: relative;
+    margin-top: -20px;
+
+    .book-content{
+        margin: 0 auto;
+        margin-bottom: 10rem;
+
+        &__box{
+            background-color: $bg-white;
+            width: 95%;
+            margin: 0 auto;
+            padding: 4rem 4.5rem 5rem 5.5rem;
+            border-radius: 5px;
+            z-index: 4;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            color: $text-black;
+            background-image: url(../images/booking3.png);
+            background-position: center center;
+            box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+
+            h2{
+                font-size: 2rem;
+                margin: 0;
+                font-weight: 700;
+            }
+
+            p{
+                width: 100%;
+                margin-bottom: 1.5rem;
+                background-color: plum;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                border-radius: 15px;
+            }
+
+            .box-form{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto;
+                gap: 2.5rem;
+
+                @media (max-width:1000px){
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media (max-width:630px){
+                    grid-template-columns: 1fr;
+                }
+
+                b{
+                    color: $text-orange;
+                }
+
+                &__car-type{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                
+                label{
+                    display: block;
+                    margin-bottom: 1.2rem;
+                    font-weight: 600;
+                }
+                select{
+                    font-size: 1rem;
+                    color: #ababab;
+                    border: 1px solid #ccd7e6;
+                    font-weight: 400;
+                    padding: 0.5rem 1.3rem;
+                    border-radius: 3px;
+                    outline: none;
+                }
+            }
+            &__car-time{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                input{
+                    outline: none;
+                    border: 1px solid #ccd7e6;
+                    padding: 0.5rem 1.3rem;
+                    font-size: 1rem;
+                    color: #ababab;
+                }
+
+                label{
+                    font-weight: 600;
+                    margin-bottom: 1.2rem;
+                }
+            }
+            button{
+                color: white;
+                background-color: $text-orange;
+                border: none;
+                border-radius: 3px;
+                height: fit-content;
+                align-self: self-end;
+                padding: 0.9rem;
+
+                &:hover {
+                    box-shadow: 0 10px 15px rgb(255 83 48 / 55%);
+                  }
+            }
+        }
+    }
+}
+}
