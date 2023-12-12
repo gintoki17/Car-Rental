@@ -1,16 +1,12 @@
 import { IconChevronRight, IconCircleCheck } from "@tabler/icons-react";
 import React from "react";
-
+import HeroImg from "../images/hero-bg.png";
 export default function Hero() {
   return (
     <div>
       <section id="home" className="hero-section">
         <div className="container">
-          <img
-            src="../images/hero-bg.png"
-            alt=""
-            className="bg-shape"
-          />
+          <img src={HeroImg} alt="" className="bg-shape" />
           <div className="hero-content">
             <div className="hero-content__text">
               <h4>Plan your trip now</h4>
