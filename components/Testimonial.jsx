@@ -1,5 +1,7 @@
 import React from "react";
 import { IconQuote } from "@tabler/icons-react";
+import Img2 from "../images/pfp1.jpg";
+import Img3 from "../images/pfp2.jpg";
 export default function Testimonial() {
   return (
     <div>
@@ -28,7 +30,7 @@ export default function Testimonial() {
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
-                    <img src="../images/pfp1.jpg" alt="user_img" />
+                    <img src={Img2} alt="user_img" />
                     <span>
                       <h4>Parry Hotter</h4>
                       <p>Griffindor</p>
@@ -46,7 +48,7 @@ export default function Testimonial() {
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
-                    <img src="../images/pfp2.jpg" alt="user_img" />
+                    <img src={Img3} alt="user_img" />
                     <span>
                       <h4>Ron Rizzly</h4>
                       <p>Hufflepuff</p>
