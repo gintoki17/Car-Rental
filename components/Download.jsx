@@ -1,5 +1,6 @@
 import React from "react";
-
+import Img1 from "../images/appstore.svg";
+import Img2 from "../images/googleapp.svg";
 export default function Download() {
   return (
     <div>
@@ -14,8 +15,8 @@ export default function Download() {
               convinced. Led income months itself and houses you.
             </p>
             <div className="download-text__btns">
-              <img src="../images/appstore.svg" alt="img" />
-              <img src="../images/googleapp.svg" alt="" />
+              <img src={Img1} alt="img" />
+              <img src={Img2} alt="" />
             </div>
           </div>
         </div>
