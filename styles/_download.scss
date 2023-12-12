@@ -1,6 +1,6 @@
 .download-section{
     background-color:$bg-gray;
-    background-image:url(../images/bg02.png) ;
+    background-image:url(/src/images/bg02.png) ;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,6 @@
 
     h2{
         font-size: 2.8rem;
-        text-align: center;
         margin: 0;
     }
 
