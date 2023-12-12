@@ -1,12 +1,13 @@
 import { IconChevronRight, IconCircleCheck } from "@tabler/icons-react";
 import React from "react";
-import HeroImg from "../images/hero-bg.png";
+import HeroImg from "../images/land_rover_0.png";
+import BgShape from "../images/hero-bg.png";
 export default function Hero() {
   return (
     <div>
       <section id="home" className="hero-section">
         <div className="container">
-          <img src={HeroImg} alt="" className="bg-shape" />
+          <img src={BgShape} alt="" className="bg-shape" />
           <div className="hero-content">
             <div className="hero-content__text">
               <h4>Plan your trip now</h4>
@@ -27,7 +28,7 @@ export default function Hero() {
               </div>
             </div>
             <img
-              src="../images/land_rover_0.png"
+              src={HeroImg}
               alt="car-img"
               className="hero-content__car-img"
             />
