@@ -1,8 +1,8 @@
 import React from "react";
 import MainImg from "/images/ChooseUs/main2.png";
-import Box1 from "../images/chooseUs/icon1.png";
-import Box2 from "../images/chooseUs/icon2.png";
-import Box3 from "../images/chooseUs/icon3.png";
+import Box1 from "../images/ChooseUs/icon1.png";
+import Box2 from "../images/ChooseUs/icon2.png";
+import Box3 from "../images/ChooseUs/icon3.png";
 import { IconChevronRight } from "@tabler/icons-react";
 export default function Choose() {
   return (
